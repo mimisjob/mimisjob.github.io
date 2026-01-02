@@ -9,7 +9,7 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-loader{top:43%;height:25%;width:100%}
 .lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(../images/loading.gif) no-repeat}
 
-.lb-container {height:40em; overflow-y:scroll;}
+.lb-container {height:40em; /* overflow-y:scroll;*/}
 .lb-container>.nav{left:0}
 
 .lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}
