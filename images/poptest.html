@@ -1,0 +1,63 @@
+<html>
+
+	<head>
+
+		<style type="text/css">
+
+
+			div{ width:200px; height:200px; position:absolute; visibility:hidden; }
+
+		    .s1{left:400;top:50;}
+
+		</style>
+
+		<script language="javascript">
+
+		    function a(n) {
+
+				divObj.style.visibility="visible";
+
+		        document.getElementById("bigImg").src = n.src;
+
+		    }
+
+		</script>
+
+	</head>
+
+	<body>
+
+	<script>
+
+	    var img = ["first", "second", "third", "fourth", "fifth", "sixth","seventh","eighth","ninth"];
+
+		var count=0;
+
+	    for (var i=0; i < 3; i++) {
+
+			document.write("<table><tr>");
+
+			for(var j=0; j<3;j++){
+
+            document.write("<td><img id=img src=" + img[count] + ".gif width='20px' height='20px' onclick='a(this)'>");
+
+			count++;
+
+			}
+
+			document.write("</tr></table>")
+
+	    }
+
+	    document.write("");
+
+	</script>
+
+	<div class="s1" id="divObj">
+
+        <img id="bigImg" width="500px" height="400px" src="first.gif">
+	</div>
+
+	</body>
+
+</html>
